@@ -1,5 +1,5 @@
 import random
-from data.bergen import full_random_bergen, adventurous_bergen, creative_bergen, active_bergen, first_date_bergen
+from data.bergen.full_random_bergen import full_random_bergen as random_bergen
 # need to import rest of data
 
 # activity limits
@@ -21,28 +21,28 @@ cities_categories = {
         "active": None,
         "creative": None,
         "adventurous": None,
-        "random": full_random_stavanger
+        "random": random_stavanger
     },
     "bergen": {
         "first date": first_date_bergen, 
         "active": active_bergen,
         "creative": creative_bergen,
         "adventurous": adventurous_bergen,
-        "random": full_random_bergen
+        "random": random_bergen
     },
     "oslo": {
         "first date": None, 
         "active": None,
         "creative": None,
         "adventurous": None,
-        "random": full_random_oslo
+        "random": random_oslo
     },
     "trondheim": {
         "first date": None, 
         "active": None,
         "creative": None,
         "adventurous": None,
-        "random": full_random_trondheim
+        "random": random_trondheim
     },
 }
 
