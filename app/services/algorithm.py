@@ -102,10 +102,9 @@ def get_random_activities(activities_city, n, activities_list=None, is_film=Fals
         return get_random_activities(activities_city, n, activities_list, is_film, is_food, is_hike, attempts + 1)
     return f"----------\nYour date for the evening: {activities_list}"
 
-def get_activity_info(info_list):
-    for dictionary in info_list:
-        for key, value in dictionary.items():
-            print(f"{key}: {value}")
+def get_activity_info(info_dict):
+    for key, value in info_dict.items():
+        print(f"{key}: {value}")
 
 def set_limit(random_activity, is_film, is_food, is_hike):
     if random_activity in film_activities:
