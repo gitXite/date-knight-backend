@@ -104,9 +104,10 @@ def get_random_activities(activities_city, n, activities_list=None, is_film=Fals
     
 
 # Used in the algorithm to get activity information
-def get_activity_info(info_dict):
-    for key, value in info_dict.items():
-        print(f"{key}: {value}")
+def get_activity_info(info_list):
+    for dictionary in info_list:
+        for key, value in dictionary.items():
+            print(f"{key}: {value}")
 
 # Sets a boolean to True, to prevent similar reoccuring activities
 def set_limit(random_activity, is_film, is_food, is_hike):
