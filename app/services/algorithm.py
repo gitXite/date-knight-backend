@@ -101,11 +101,14 @@ def get_random_activities(activities_city, n, activities_list=None, is_film=Fals
     if n > 0:
         return get_random_activities(activities_city, n, activities_list, is_film, is_food, is_hike, attempts + 1)
     return f"----------\nYour date for the evening: {activities_list}"
+    
 
+# Used in the algorithm to get activity information
 def get_activity_info(info_dict):
     for key, value in info_dict.items():
         print(f"{key}: {value}")
 
+# Sets a boolean to True, to prevent similar reoccuring activities
 def set_limit(random_activity, is_film, is_food, is_hike):
     if random_activity in film_activities:
         is_film = True
@@ -114,15 +117,18 @@ def set_limit(random_activity, is_film, is_food, is_hike):
     elif random_activity == "Run/hike":
         is_hike = True
     return is_film, is_food, is_hike
-    
+
+# Get a city from the frontend by user input
 def get_city(user_city):
     city = user_city.lower()
     return city
-    
+
+# Get an activity category from the frontend by user input
 def get_activities_by_category(user_category, city):
     category = user_category.lower()
     return cities_categories[city][category]
 
+# Get number of activities from the frontend by user input
 def get_number_activities(user_number):
     if 0 < user_number < 5:
         return user_number
