@@ -1,4 +1,4 @@
-full_activities_bergen = {
+full_random_bergen = {
     "Movie": {
         "genre": {
             "Action": {},
