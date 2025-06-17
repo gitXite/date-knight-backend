@@ -1,6 +1,5 @@
 import random
-from random_contents import activities_bergen, activities_stavanger, activities_oslo, activities_trondheim
-
+# need to import data
 
 # activity limits
 film_activities = [
@@ -14,38 +13,40 @@ food_activities = [
     "Homemade dinner",
     "Cooking class"
 ]
+# Activity objects
 cities_categories = {
     "stavanger": {
         "first date": None, 
         "active": None,
-        "Creative": None,
+        "creative": None,
         "adventurous": None,
-        "random": activities_stavanger
+        "random": full_random_stavanger
     },
     "bergen": {
-        "first date": None, 
-        "active": None,
-        "Creative": None,
-        "adventurous": None,
-        "random": activities_bergen
+        "first date": first_date_bergen, 
+        "active": active_bergen,
+        "creative": creative_bergen,
+        "adventurous": adventurous_bergen,
+        "random": full_random_bergen
     },
     "oslo": {
         "first date": None, 
         "active": None,
-        "Creative": None,
+        "creative": None,
         "adventurous": None,
-        "random": activities_oslo
+        "random": full_random_oslo
     },
     "trondheim": {
         "first date": None, 
         "active": None,
-        "Creative": None,
+        "creative": None,
         "adventurous": None,
-        "random": activities_trondheim
+        "random": full_random_trondheim
     },
 }
 
 
+# Recursive algorithm to get random activities
 def get_random_activities(activities_city, n, activities_list=None, is_film=False, is_food=False, is_hike=False, attempts=0):
     if activities_list is None:
         activities_list = []
