@@ -1,5 +1,6 @@
 import random
-# need to import data
+from data.bergen import full_random_bergen, adventurous_bergen, creative_bergen, active_bergen, first_date_bergen
+# need to import rest of data
 
 # activity limits
 film_activities = [
