@@ -74,7 +74,7 @@ full_random_bergen = {
             {"Cost": ""},
             {"Link": "INSERT URL HERE"}
         ],
-        "Sweet & sour chicken with cashew bed": [
+        "Sweet & sour chicken on cashew bed": [
             {"Time": ""},
             {"Cost": ""},
             {"Link": "INSERT URL HERE"}
