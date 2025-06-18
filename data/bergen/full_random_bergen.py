@@ -301,5 +301,10 @@ full_random_bergen = {
         {"Time": ""},
         {"Cost": ""},
         {"Link": "INSERT URL HERE"}
-    ]
+    ],
+    "Squash": [
+        {"Time": ""},
+        {"Cost": ""},
+        {"Link": "INSERT URL HERE"}
+    ],
 }
