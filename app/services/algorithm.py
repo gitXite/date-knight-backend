@@ -1,5 +1,11 @@
 import random
 from data.bergen.full_random_bergen import full_random_bergen as random_bergen
+from data.bergen.first_date_bergen import first_date_bergen
+from data.bergen.adventurous_bergen import adventurous_bergen
+from data.bergen.creative_bergen import creative_bergen
+from data.bergen.active_bergen import active_bergen
+
+
 # need to import rest of data
 
 # activity limits
