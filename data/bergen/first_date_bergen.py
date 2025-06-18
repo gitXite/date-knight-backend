@@ -229,6 +229,11 @@ first_date_bergen = {
         {"Cost": ""},
         {"Link": "INSERT URL HERE"}
     ],
+    "Picnic": [
+        {"Time": ""},
+        {"Cost": ""},
+        {"Link": "INSERT URL HERE"}
+    ],
     "Bouldering": [
         {"Time": ""},
         {"Cost": ""},
