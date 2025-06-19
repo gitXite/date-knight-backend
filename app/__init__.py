@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_cors import CORS
 from dotenv import load_dotenv
+from app.api.main import main_bp
 from .config import DevelopmentConfig, ProductionConfig, TestingConfig
 import os
 
@@ -17,5 +18,8 @@ def create_app(config_name='development'):
         app.config.from_object(TestingConfig)
     else:
         app.config.from_object(DevelopmentConfig)   
+
+    # Register blueprints
+    # app.register_blueprint(main_bp)
 
     return app
