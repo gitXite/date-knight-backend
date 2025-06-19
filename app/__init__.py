@@ -7,6 +7,7 @@ import os
 
 def create_app(config_name='development'):
     load_dotenv()
+    
     app = Flask(__name__)
     CORS(app, supports_credentials=True, origins=[os.getenv("FRONTEND_URL", "http://localhost:5173")])
 
