@@ -19,7 +19,11 @@ Are you ready to impress?
 - pip (Python package manager)
 
 ### Installation
-
+```bash
+git clone https://github.com/gitXite/date-knight-backend.git
+cd date-knight-backend
+npm install
+```
 
 ## ✨ Features
 Get a random, curated date spot in your city
